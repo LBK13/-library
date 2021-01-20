@@ -1,0 +1,225 @@
+[class^="input"]{
+    border: none;
+    outline: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+}
+.input-start{
+    border: solid 1px rgb(199, 181, 181);
+}
+.input-start::placeholder{
+    opacity: 0.5;
+}
+.input-valid{
+    border: solid 1px green;
+}
+.icon-valid{
+    position: relative;
+}
+.icon-valid::before{
+    content: "";
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    background: url(../icons/valid.png) 0 0/100% no-repeat;
+    z-index: 1;
+    top: 10px;
+    right: 15px;
+}
+.input-invalid{
+    border: solid 1px red;
+}
+.icon-invalid{
+    position: relative;
+}
+.icon-invalid::before{
+    content: "";
+    position: absolute;
+    width: 15px;
+    height: 16px;
+    background: url(../icons/invalid.png) 0 0/100% no-repeat;
+    top: 8px;
+    right: 15px;
+}
+.oncheck{
+    position: relative;
+}
+.oncheck input{
+    -webkit-appearance: none;
+    appearance: none;
+    outline: none;
+    width: 2.6rem;
+    height: 1.2rem;
+    border: solid 1px green;
+    border-radius: 5px;
+    background-color: white;
+}
+.oncheck input::before{
+    content: "";
+    width: 1.3rem;
+    height: 0.9rem;
+    background-color: #3ead47;
+    position: absolute;
+    top: 5px;
+    left: 6px;
+    border-radius: 5px;
+}
+.oncheck input:checked{
+    border: solid 1px red;
+}
+.oncheck input:checked::before{
+    background-color: #e94462;
+    left: calc(100% - (1.3rem + 10px));
+}
+.offcheck{
+    position: relative;
+}
+.offcheck input{
+    -webkit-appearance: none;
+    appearance: none;
+    outline: none;
+    width: 2.6rem;
+    height: 1.2rem;
+    border: solid 1px red;
+    border-radius: 5px;
+    background-color: white;
+}
+.offcheck input::before{
+    content: "";
+    width: 1.3rem;
+    height: 0.9rem;
+    background-color: #e94462;
+    position: absolute;
+    top: 5px;
+    left: 23px;
+    border-radius: 5px;
+}
+.offcheck input:checked{
+    border: solid 1px green;
+}
+.offcheck input:checked::before{
+    background-color: #3ead47 ;
+    left: calc(100% - (1.3rem + 26px));
+}
+.radio{
+    position: relative;
+}
+.radio input{
+    -webkit-appearance: none;
+    appearance: none;
+    outline: none;
+    width: 1.2rem;
+    height: 1.2rem;
+    background-color: white;
+    border-radius: 50%;
+    vertical-align: text-bottom;
+    border: solid 1px red;
+}
+.radio input::before{
+    content: "";
+    width: 0.9rem;
+    height: 0.9rem;
+    background-color: white;
+    position: absolute;
+    border-radius: 50%;
+    left: 7.5px;
+    top: 5.5px;
+}
+.radio input:checked{
+    border: solid 1px green;
+}
+.radio input:checked::before{
+    background-color: #3ead47;
+}
+.active input{
+    -webkit-appearance: none;
+    appearance: none;
+    border:none;
+    outline: none;
+    background-color: #3ead47;
+     color: white;
+    padding: 0.6rem 1.4rem;
+    border-radius: 5px;
+}
+.active input:hover{
+    background-color: #2b772f;
+}
+.danger input{
+    -webkit-appearance: none;
+    appearance: none;
+    border:none;
+    outline: none;
+    background-color: #e33e60;
+     color: white;
+    padding: 0.6rem 1.4rem;
+    border-radius: 5px;
+}
+.danger input:active{
+    background-color: #e33e60 ;
+}
+.danger input:hover{
+    background-color: #98263d;
+}
+.activeh input{
+    -webkit-appearance: none;
+    appearance: none;
+    border:none;
+    outline: none;
+    background-color: #2b772f;
+     color: white;
+    padding: 0.6rem 1.4rem;
+    border-radius: 5px;
+}
+.dangerh input{
+    -webkit-appearance: none;
+    appearance: none;
+    border:none;
+    outline: none;
+    background-color: #98263d;
+     color: white;
+    padding: 0.6rem 1.4rem;
+    border-radius: 5px;
+}
+.disabled input{
+    -webkit-appearance: none;
+    appearance: none;
+    border:none;
+    outline: none;
+    color: white;
+    padding: 0.6rem 1.4rem;
+    border-radius: 5px;
+    background-color: #818181;
+}
+.pl input{
+    -webkit-appearance: none;
+    appearance: none;
+    border:none;
+    outline: none;
+    background-color: #3ead47;
+     color: white;
+     padding: 0.3rem 0.8rem;
+    border-radius: 50%;
+    font-family: "arial black";
+    font-size: 18px;
+}
+.ml input{
+    -webkit-appearance: none;
+    appearance: none;
+    border:none;
+    outline: none;
+    background-color: #e33e60;
+     color: white;
+     padding: 0.3rem 1rem;
+    border-radius: 50%;
+    font-family: "arial black";
+    font-size: 18px;
+}
+.texta textarea{
+    border: none;
+    outline: none;
+    border: solid 1px rgb(199, 181, 181);
+    padding: 10px 0 0 15px;
+}
+.texta textarea::placeholder{
+    opacity: 0.5;
+}

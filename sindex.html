@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/sstyle.css">
+        <title>Second Form</title>
+    </head>
+    <body>
+        <div class="container">
+            <form>
+                <div class="flex-container">
+                        <div class="col-1">
+                            <h2>Registration form</h2>
+                            <div class="icon-f"><input type="text" placeholder="Username"></div>
+                            <div class="icon-s"><input type="email" placeholder="Email address"></div>
+                            <div class="row-1 icon-t">
+                                <div><input type="password" placeholder="Password"></div>
+                                <div><input type="password" placeholder="Confirm password"></div>
+                            </div>
+                        </div>
+                        <div class="col-2">
+                            <h2>Personal details</h2>
+                            <div class="row-2">
+                                <div><input type="text" name="Firstname" placeholder="First name"></div>  
+                                <div><input type="text" name="Lastname" placeholder="Last name"></div>      
+                            </div>
+                            <div class="row-3">
+                                <div>
+                                    <input type="text" list="sex" value="Male">
+                                    <datalist id="sex"><option>Male</option><option>Female</option></datalist>
+                                </div>
+                                <div><input type="date" value="2020-12-31"></div>
+                            </div>
+                        </div>
+                        <div class="col-3">
+                            <div>
+                                <input type="checkbox" id="firstcheck">
+                                <label for="firstcheck">I want to receive news and special offers</label>
+                            </div>
+                            <div>
+                                <input type="checkbox" id="secondcheck" required>
+                                <label for="secondcheck">I agree with the Terms and Conditions</label>
+                            </div>
+                            <div class="btn">
+                                <input type="submit" value="SUBMIT">
+                            </div>
+                        </div>
+                </div>
+            </form>
+        </div>
+    </body>
+</html>

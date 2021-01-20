@@ -1,0 +1,154 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    font-family: corbel;
+}
+.container{
+    max-width: 1000px;
+    margin: 200px auto;
+    background-color: rgb(223, 221, 217);
+}
+.flex-container{
+    display: flex;
+    flex-wrap: wrap;
+}
+h2{
+    font-weight: normal;
+}
+.col-1 input,.col-2 input{
+    border: none;
+    outline: none;
+    background-color: rgb(223, 221, 217);
+    border-bottom: solid 1px rgb(107, 101, 101);
+    width: 100%;
+    padding: 0 0 5px 10px;
+}
+form{
+    padding: 1rem 2rem;
+}
+.col-1{
+    width: 50%;
+    padding-right: 20px;
+}
+.col-2{
+    width: 50%;
+}
+.col-1>div{
+    padding: 15px 10px 10px 35px;
+}
+.col-2>div{
+    padding: 15px 0 10px 0;
+}
+.col-3{
+    width: 100%;
+}
+[class^="row"]{
+    display: flex;
+    justify-content: space-between;
+}
+.row-1 div,.row-2 div,.row-3 div{
+    width: 48%;
+}
+.icon-f{
+    position: relative;
+}
+.icon-f::before{
+    content: "";
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    background: url(../icons/username.png) 0 0/100% no-repeat;
+    left: 0;
+    top: 5px;
+}
+.icon-s{
+    position: relative;
+}
+.icon-s::before{
+    content: "";
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    background: url(../icons/email.png) 0 0/100% no-repeat;
+    left: 0;
+    top: 5px;
+}
+.icon-t{
+    position: relative;
+}
+.icon-t::before{
+    content: "";
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    background: url(../icons/pswd.png) 0 0/100% no-repeat;
+    left: 0;
+    top: 5px;
+}
+.col-3{
+    padding-top: 2rem;
+}
+.col-3 div{
+    padding-bottom: 1rem;
+}
+.btn{
+    padding-top: 3rem;
+    display: flex;
+    justify-content: flex-end;
+}
+.btn input{
+    -webkit-appearance: none;
+    appearance: none;
+    border: none;
+    outline: none;
+    background-color: gray;
+    padding: 0.6rem 3rem;
+    color: white;
+    border-radius: 5px;
+    padding-top: ;
+}
+.btn input:hover{
+    background-color: rgb(94, 70, 70);
+}
+@media screen and (max-width:899px){
+    .col-1{
+        width: 100%;
+        padding-right: 0;
+    }
+    .col-2{
+        width: 100%;
+        padding-top: 3rem;
+    }
+    .col-1>div{
+        padding-right: 0;
+    }
+    .col-2>div{
+        padding-bottom: 25px;
+    }
+}
+@media screen and (max-width:599px){
+    .row-1,
+    .row-2,
+    .row-3{
+        flex-wrap: wrap;
+    }
+    .row-1 div{
+        width: 100%;
+        padding-bottom: 25px;
+    }
+    .col-2{
+        padding-top: 0;
+    }
+    .row-2>div,
+    .row-3>div{
+        width: 100%;
+    }
+    .row-2 div:nth-child(1){
+        padding-bottom: 15px;
+    }
+    .row-3 div:nth-child(1){
+        padding-bottom: 15px;
+    }
+    
+}
